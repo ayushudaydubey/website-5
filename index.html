@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Podcast Website</title>
 </head>
@@ -12,196 +14,177 @@
 <body class="bg-black">
   <main class="bg-[url('.png')] bg-cover bg-[100%_0%]">
 
-    <nav class="px-6 py-4 flex items-center justify-between mb-16 text-white">
-      <div class="logo text-2xl">Podcast</div>
-      <div class="links flex items-center gap-12">
-        <div class="nav-links flex gap-6">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Episode</a>
-          <a href="#">Streaming</a>
-          <a href="#">Contact</a>
+    <!-- Navigation -->
+    <nav class="px-8 py-4 flex items-center justify-between mb-8 text-white">
+      <div class="logo flex gap-2 text-xl sm:text-3xl font-bold text-gray-200 items-center ">
+        <img class="h-16 w-16 object-cover" src="head.png" alt="">
+        <h1>The Pod Journey</h1>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <div class="nav-links flex gap-4 sm:gap-6">
+          <a href="#" class=" text-lg hover:border-b-2 border-[#22C55E]">Home</a>
+          <a href="#" class=" text-lg hover:border-b-2 border-[#22C55E]">About</a>
+          <a href="#" class=" text-lg hover:border-b-2 border-[#22C55E]">Episode</a>
+          <a href="#" class=" text-lg hover:border-b-2 border-[#22C55E]">Streaming</a>
+          <a href="#" class=" text-lg hover:border-b-2 border-[#22C55E]">Contact</a>
         </div>
-        <div class="btn flex gap-4">
-          <button class="px-4 py-1 border border-gray-200 rounded-xl">Subscribe</button>
-          <button class="px-4 py-1 border border-gray-200 rounded-xl">Exclusive</button>
+        <div class="btn flex gap-2">
+          <button
+            class="bg-stone-900 hover:bg-transparent px-3 py-2 border-2 border-[#22C55E] text-[#22C55E] font-medium rounded-lg text-sm sm:text-base">Subscribe</button>
+          <button
+            class="bg-stone-900 hover:bg-transparent px-3 py-2 border-2 border-[#22C55E] text-[#22C55E] font-medium  rounded-lg text-sm sm:text-base">Exclusive</button>
         </div>
       </div>
     </nav>
 
-    <header>
-      <h1 class="text-5xl font-bold px-6 mb-2 text-center text-white">From Trending Topics to Deep Dives</h1>
-      <h1 class="text-5xl font-bold px-6 text-center text-white mb-6">
-        Explore a World of <span class="text-green-500">Podcast </span> rated Just for You
+    <!-- Header -->
+    <header class="text-center px-8">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white">
+        From Trending Topics to Deep Dives
       </h1>
-      <p class="text-lg text-gray-300 text-center mb-8 px-12">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
+        Explore a World of <span class="text-green-500">Podcasts</span> Rated Just for You
+      </h1>
+      <p class="text-sm sm:text-lg text-gray-300 mb-6">
         From the latest trends to in-depth explorations, we’ve handpicked the best podcasts across genres. Get ready to
         learn, laugh, and be entertained—your next favorite show is just a click away.
       </p>
 
-      <div class="subscription flex gap-4 items-center px-6 justify-between mb-8">
-        <img class="h-44 w-80 rounded-xl object-cover"
-          src="https://i.pinimg.com/736x/eb/66/07/eb6607a61a567cb61da9cff834e45165.jpg" alt="Podcast Cover 1">
-        <div class="subsription-btn flex gap-4">
-          <button class="bg-gray-200 text-black rounded-xl px-4 py-2 font-medium text-xl">Latest Episode</button>
-          <button class="bg-gray-200 text-black rounded-xl px-4 py-2 font-medium text-xl">Subscribe Now</button>
+      <div class="subscription flex flex-col md:flex-row gap-4 px-8 items-center justify-between mb-8">
+        <img class="h-64 w-full md:w-1/3 rounded-lg object-cover"
+          src="https://i.pinimg.com/736x/38/61/2b/38612b1739d92f718c1bbfbb02be1788.jpg" alt="Podcast Cover 1">
+        <div class="subsription-btn flex gap-2 md:gap-4">
+          <button
+            class="bg-stone-900 hover:bg-transparent text-[#22C55E] font-semibold  text-xl border-2 border-[#22C55E] rounded-lg px-4 py-2 text-sm sm:text-base">Latest
+            Episode</button>
+          <button
+            class="bg-stone-900 hover:bg-transparent text-[#22C55E] font-semibold  text-xl border-2 border-[#22C55E] rounded-lg px-4 py-2 text-sm sm:text-base">Subscribe
+            Now</button>
         </div>
-        <img class="h-44 w-80 rounded-xl object-cover"
+        <img class="h-40 w-full md:w-1/3 rounded-lg object-cover"
           src="https://i.pinimg.com/736x/c9/77/f8/c977f859f078e8b92bd105023c567570.jpg" alt="Podcast Cover 2">
       </div>
-
-      <div class="podcast-app text-center mb-8 py-4">
-        <h2 class="text-4xl font-bold text-gray-300 mb-6">Listen to Podcasts Through</h2>
-        <div class="app-imgs flex items-center justify-center gap-6">
-          <img class=" w-16 h-16 object-cover rounded-full hover:scale-110 transition-300 "
-            src="https://i.pinimg.com/736x/40/07/a2/4007a2dad31973f7dc028cbf87ac4ca6.jpg" alt="">
-          <img class=" w-16 h-16 object-cover rounded-full hover:scale-110 transition-300 "
-            src="https://i.pinimg.com/736x/ff/06/ea/ff06ea753fdb5f1578bf4d98452c2852.jpg" alt="">
-          <img class=" w-16 h-16 object-cover rounded-full hover:scale-110 transition-300 "
-            src="https://i.pinimg.com/736x/6a/0a/02/6a0a02dd4c73e6ba107317e031677292.jpg" alt="">
-          <img class=" w-16 h-16 object-cover rounded-full hover:scale-110 transition-300 "
-            src="https://i.pinimg.com/736x/70/0b/d0/700bd02c6708d6d2561bb27947c05ab0.jpg" alt="">
-          <img class=" w-16 h-16 object-cover rounded-full hover:scale-110 transition-300 "
-            src="https://i.pinimg.com/736x/36/42/e4/3642e4dcef92cb97fa79537c5e5ce1d4.jpg" alt="">
-
-        </div>
-      </div>
-
     </header>
 
-    <section class="new-episode text-white flex gap-4 px-12 items-center justify-center mb-6">
-
-
-      <div class="recent-epi flex flex-col items-center justify-center gap-6">
-        <h2 class="text-3xl font-medium text-gray-300 mb-6">Recent Episode Here</h2>
-
-
-        <div class="epi-card bg-zinc-900 text-white rounded-2xl  px-4 py-2 flex  items-center gap-4">
-          <!-- Episode Image -->
-          <img class="h-32 w-32 rounded-full object-cover"
-            src="https://i.pinimg.com/736x/c1/2a/17/c12a171e84a71e7a7f0c3a0f7650c855.jpg" alt="">
-
-          <!-- Episode Title -->
-          <h3 class="text-2xl font-bold text-center">Episode Title</h3>
-
-          <!-- Episode Description -->
-          <p class="text-gray-300 text-center">
-            A brief description of the episode goes here.
-            <br> Learn something new, laugh, or dive deep into amazing stories!
-          </p>
-
-          <!-- Listen Button -->
-          <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium">
-            Listen Now
-          </button>
-
-        </div>
-
-        <div class="epi-card bg-zinc-900 text-white rounded-2xl  px-4 py-2 flex  items-center gap-4">
-          <!-- Episode Image -->
-          <img class="h-32 w-32 rounded-full object-cover object-[10%_10%]"
-            src="https://i.pinimg.com/736x/19/97/ec/1997ec3ada2d214334a9b49c288de5b1.jpg" alt="">
-
-          <!-- Episode Title -->
-          <h3 class="text-2xl font-bold text-center">Episode Title</h3>
-
-          <!-- Episode Description -->
-          <p class="text-gray-300 text-center">
-            A brief description of the episode goes here.
-            <br> Learn something new, laugh, or dive deep into amazing stories!
-          </p>
-
-          <!-- Listen Button -->
-          <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium">
-            Listen Now
-          </button>
-
-        </div>
-        <div class="epi-card bg-zinc-900 text-white rounded-2xl-lg px-4 py-2 flex  items-center gap-4">
-          <!-- Episode Image -->
-          <img class="h-32 w-32 rounded-full object-cover"
-            src="https://i.pinimg.com/736x/15/10/fe/1510fe0b70dda526acbb8c0fa393d2d7.jpg" alt="">
-
-          <!-- Episode Title -->
-          <h3 class="text-2xl font-bold text-center">Episode Title</h3>
-
-          <!-- Episode Description -->
-          <p class="text-gray-300 text-center">
-            A brief description of the episode goes here.
-            <br> Learn something new, laugh, or dive deep into amazing stories!
-          </p>
-
-          <!-- Listen Button -->
-          <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium">
-            Listen Now
-          </button>
-
-        </div>
-
-        <div class="epi-card bg-zinc-900 text-white rounded-2xl-lg px-4 py-2 flex  items-center gap-4">
-          <!-- Episode Image -->
-          <img class="h-32 w-32 rounded-full object-cover object-[10%_10%]"
-            src="https://i.pinimg.com/736x/19/97/ec/1997ec3ada2d214334a9b49c288de5b1.jpg" alt="">
-
-          <!-- Episode Title -->
-          <h3 class="text-2xl font-bold text-center">Episode Title</h3>
-
-          <!-- Episode Description -->
-          <p class="text-gray-300 text-center">
-            A brief description of the episode goes here.
-            <br> Learn something new, laugh, or dive deep into amazing stories!
-          </p>
-
-          <!-- Listen Button -->
-          <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium">
-            Listen Now
-          </button>
-
-        </div>
-        <div class="epi-card bg-zinc-900 text-white rounded-2xl-lg px-4 py-2 flex  items-center gap-4">
-          <!-- Episode Image -->
-          <img class="h-32 w-32 rounded-full object-cover"
-            src="https://i.pinimg.com/736x/15/10/fe/1510fe0b70dda526acbb8c0fa393d2d7.jpg" alt="">
-
-          <!-- Episode Title -->
-          <h3 class="text-2xl font-bold text-center">Episode Title</h3>
-
-          <!-- Episode Description -->
-          <p class="text-gray-300 text-center">
-            A brief description of the episode goes here.
-            <br> Learn something new, laugh, or dive deep into amazing stories!
-          </p>
-
-          <!-- Listen Button -->
-          <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium">
-            Listen Now
-          </button>
-
-        </div>
-
-        <button class=" px-4 py-2 border border-gray-200 text-gray-300 text-2xl font-medium rounded-lg">View All
-        </button>
-
+    <!-- Podcast App -->
+    <section class="podcast-app text-center mb-8 py-4 px-4">
+      <h2 class="text-2xl sm:text-4xl font-bold text-gray-300 mb-6">Listen to Podcasts Through</h2>
+      <div class="app-imgs flex flex-wrap items-center justify-center gap-4">
+        <img class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full hover:scale-110 transition-transform"
+          src="https://i.pinimg.com/736x/40/07/a2/4007a2dad31973f7dc028cbf87ac4ca6.jpg" alt="">
+        <img class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full hover:scale-110 transition-transform"
+          src="https://i.pinimg.com/736x/ff/06/ea/ff06ea753fdb5f1578bf4d98452c2852.jpg" alt="">
+        <img class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full hover:scale-110 transition-transform"
+          src="https://i.pinimg.com/736x/6a/0a/02/6a0a02dd4c73e6ba107317e031677292.jpg" alt="">
+        <img class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full hover:scale-110 transition-transform"
+          src="https://i.pinimg.com/736x/70/0b/d0/700bd02c6708d6d2561bb27947c05ab0.jpg" alt="">
+        <img class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full hover:scale-110 transition-transform"
+          src="https://i.pinimg.com/736x/36/42/e4/3642e4dcef92cb97fa79537c5e5ce1d4.jpg" alt="">
       </div>
-
     </section>
+
+    <!-- Recent Episodes -->
+    <section class="new-episode text-white px-6 mb-12">
+      <h2 class="text-2xl sm:text-3xl font-medium text-gray-300 mb-6 text-center">Recent Episodes</h2>
+      <div class="flex flex-col gap-4">
+        <div class="epi-card bg-zinc-900 text-white rounded-lg px-4 py-2 flex flex-col sm:flex-row items-center gap-4">
+          <img class="h-28 w-28 sm:h-32 sm:w-32 rounded-full object-cover"
+            src="https://i.pinimg.com/736x/c1/2a/17/c12a171e84a71e7a7f0c3a0f7650c855.jpg" alt="">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-center sm:text-left">Uncover Amazing Tales Today!</h3>
+            <p class="text-sm sm:text-base text-gray-300">
+              A brief description of the episode goes here. Learn something new, laugh, or dive deep into amazing
+              stories!
+            </p>
+          </div>
+          <button
+            class=" flex gap-2 items-center bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 rounded-lg text-sm sm:text-base font-medium">
+            Listen Now <i class="ri-play-circle-fill text-3xl"></i>
+          </button>
+        </div>
+        <div class="epi-card bg-zinc-900 text-white rounded-lg px-4 py-2 flex flex-col sm:flex-row items-center gap-4">
+          <img class="h-28 w-28 sm:h-32 sm:w-32 rounded-full object-cover "
+            src="https://i.pinimg.com/474x/08/09/79/080979bfd2e2ef9a364bc073aca1e3e7.jpg" alt="">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-center sm:text-left">Mystery Unveiled</h3>
+            <p class="text-sm sm:text-base text-gray-300">
+              Dive into a tale of suspense and wonder as we uncover secrets hidden in plain sight.
+            </p>
+          </div>
+          <button
+            class="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-lg text-sm sm:text-base font-medium">
+            Play Episode <i class="ri-play-circle-fill text-3xl"></i>
+          </button>
+        </div>
+
+        <div
+          class="epi-card bg-zinc-900 text-white rounded-lg px-4 py-2 flex flex-col sm:flex-row items-center gap-4 mt-6">
+          <img class="h-28 w-28 sm:h-32 sm:w-32 rounded-full object-cover"
+            src="https://i.pinimg.com/736x/00/ee/db/00eedbdae88a8c26b83c62988d15bd5a.jpg" alt="">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-center sm:text-left">Tech Revolution</h3>
+            <p class="text-sm sm:text-base text-gray-300">
+              Explore the groundbreaking innovations that are shaping our future.
+            </p>
+          </div>
+          <button
+            class="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white px-4 sm:px-6 py-2 rounded-lg text-sm sm:text-base font-medium">
+            Listen Now <i class="ri-play-circle-fill text-3xl"></i>
+          </button>
+        </div>
+
+        <div
+          class="epi-card bg-zinc-900 text-white rounded-lg px-4 py-2 flex flex-col sm:flex-row items-center gap-4 mt-6">
+          <img class="h-28 w-28 sm:h-32 sm:w-32 rounded-full object-cover"
+            src="https://i.pinimg.com/736x/ea/0b/b2/ea0bb2e2c4be1a6a77bb5b54157d8376.jpg" alt="">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-center sm:text-left">Inspirational Stories</h3>
+            <p class="text-sm sm:text-base text-gray-300">
+              Hear the powerful journeys of individuals who overcame the odds and made history.
+            </p>
+          </div>
+          <button
+            class="flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white px-4 sm:px-6 py-2 rounded-lg text-sm sm:text-base font-medium">
+            Tune In <i class="ri-play-circle-fill text-3xl"></i>
+          </button>
+        </div>
+
+        <div
+          class="epi-card bg-zinc-900 text-white rounded-lg px-4 py-2 flex flex-col sm:flex-row items-center gap-4 mt-6">
+          <img class="h-28 w-28 sm:h-32 sm:w-32 rounded-full object-cover"
+            src="https://i.pinimg.com/736x/60/5f/ac/605fac9ebac94b2311ea0f16968fcc2b.jpg" alt="">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-center sm:text-left">The Science Pod</h3>
+            <p class="text-sm sm:text-base text-gray-300">
+              Discover the fascinating world of science with expert insights and fun experiments.
+            </p>
+          </div>
+          <button
+            class="flex items-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-white px-4 sm:px-6 py-2 rounded-lg text-sm sm:text-base font-medium">
+            Start Listening <i class="ri-play-circle-fill text-3xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Repeat cards as needed -->
+    </section>
+
     <div
-      class="exclusive-content flex flex-col md:flex-row items-center px-8 py-6 justify-between bg-gradient-to-r from-stone-900 to-zinc-700 text-white rounded-3xl shadow-xl w-full max-w-full mx-auto mb-6">
+      class="exclusive-content flex flex-col md:flex-row items-center px-8 py-6 justify-between bg-gradient-to-r from-black to-zinc-800 text-white rounded-3xl shadow-xl w-full max-w-full mx-auto mb-6">
       <!-- Text Section -->
       <div class="text-section flex-1 md:pr-6">
-        <h2 class="text-4xl font-bold mb-4">Exclusive Content</h2>
-        <p class="text-lg leading-relaxed mb-6">
+        <h2 class="text-4xl font-bold mb-4 text-[#FF94B4]">Exclusive Content</h2>
+        <p class="text-lg leading-relaxed mb-6 text-gray-300">
           Unlock premium access to exclusive articles, videos, and more! Become a member and enjoy the ultimate
           experience tailored just for you.
         </p>
         <button
-          class="bg-white text-purple-600 font-semibold px-6 py-3 rounded-full shadow-md transition-all transform hover:scale-105 hover:shadow-lg">
+          class="bg-black border border-[#FF94B4] text-[#FF94B4] font-bold px-6 py-3 rounded-full shadow-md transition-all transform hover:scale-105 hover:shadow-lg mb-6:md">
           Unlock Now
         </button>
       </div>
 
       <!-- Images Section -->
-      <div class="images-section flex gap-4 flex-wrap justify-center md:justify-end">
+      <div class="images-section flex gap-4 flex-wrap justify-center md:justify-end ">
         <img class="w-40 h-48 object-cover rounded-lg shadow-lg"
           src="https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?q=80&w=1389&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="">
@@ -217,56 +200,105 @@
           src="https://images.unsplash.com/photo-1581547848331-0aba76655842?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="">
 
-          <img class="w-40 h-48 object-cover rounded-lg shadow-lg"
+        <img class="w-40 h-48 object-cover rounded-lg shadow-lg"
           src="https://images.unsplash.com/photo-1676380363734-f2f932ff5981?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="">
+
+        <img class="w-40 h-48 object-cover rounded-lg shadow-lg"
+          src="https://images.unsplash.com/photo-1655947714981-03ee5644f51a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
+          alt="">
+
       </div>
 
 
     </div>
 
 
-    <h1 class="text-shadow mt-6 mb-6 text-4xl font-semibold text-gray-300 text-center">Get More with Our Subscription Plans</h1>
+    <div class="subscription-options flex flex-wrap justify-center gap-8 px-8 py-6 mb-6  ">
 
-    <div class="subscription-options flex flex-wrap justify-center gap-8 px-8 py-6  ">
-      
-      <div class="plan-card bg-zinc-900 rounded-xl  p-6 w-80 text-center border border-gray-200">
-          <h3 class="text-2xl font-bold text-purple-600 mb-4">Basic Plan</h3>
-          <p class="text-gray-200 mb-6">Perfect for individuals starting out.</p>
-          <div class="price text-4xl font-bold text-gray-200 mb-4 ">&#8377;49<span class="text-sm text-gray-530">/month</span></div>
-          <ul class="features text-gray-300 mb-6">
-              <li>✔️ Access to basic content</li>
-              <li>✔️ Email support</li>
-          </ul>
-          <button class="bg-purple-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-purple-700 transition">Subscribe</button>
+      <div class="plan-card  rounded-xl  p-6 w-80 text-center border border-gray-200">
+        <h3 class="text-3xl font-bold text-purple-600 mb-4">Basic Plan</h3>
+        <p class="text-gray-200 text-xl mb-6">Perfect for individuals starting out.</p>
+        <div class="price text-4xl font-bold text-gray-200 mb-4 ">&#8377;49<span
+            class="text-sm text-gray-530">/month</span></div>
+        <ul class="features text-gray-300 mb-6">
+          <li>✔️ Access to basic content</li>
+          <li>✔️ Email support</li>
+          <li>✔️ 24/7 priority support</li>
+        </ul>
+        <button
+          class="bg-purple-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-purple-700 transition">Subscribe</button>
       </div>
 
-      <div class="plan-card bg-zinc-900 rounded-xl  p-6 w-80 text-center border border-gray-200">
-          <h3 class="text-2xl font-bold text-blue-600 mb-4">Standard Plan</h3>
-          <p class="text-gray-200 mb-6">Ideal for regular users.</p>
-          <div class="price text-4xl font-bold text-gray-200 mb-4 ">&#8377;99<span class="text-sm text-gray-530">/month</span></div>
-          <ul class="features text-gray-300 mb-6">
-              <li>✔️ Access to all content</li>
-              <li>✔️ Priority email support</li>
-          </ul>
-          <button class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-700 transition">Subscribe</button>
+      <div class="plan-card  rounded-xl  p-6 w-80 text-center border border-gray-200">
+        <h3 class="text-3xl font-bold text-blue-600 mb-4">Standard Plan</h3>
+        <p class="text-gray-200 text-xl mb-6">Ideal for regular users.</p>
+        <div class="price text-4xl font-bold text-gray-200 mb-4 ">&#8377;99<span
+            class="text-sm text-gray-530">/month</span></div>
+        <ul class="features text-gray-300 mb-6">
+          <li>✔️ Access to all content</li>
+          <li>✔️ Priority email support</li>
+          <li>✔️ 24/7 priority support</li>
+        </ul>
+        <button
+          class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-700 transition">Subscribe</button>
       </div>
-  
-     
-      <div class="plan-card bg-zinc-900 rounded-xl  p-6 w-80 text-center border border-gray-200">
-          <h3 class="text-2xl font-bold text-green-600 mb-4">Premium Plan</h3>
-          <p class="text-gray-200 mb-6">Best for advanced users and teams.</p>
-          <div class="price text-4xl font-bold text-gray-200 mb-4 ">&#8377;299<span class="text-sm text-gray-300">/month</span></div>
-          <ul class="features text-gray-300 mb-6">
-              <li>✔️ Unlimited access</li>
-              <li>✔️ 24/7 priority support</li>
-              <li>✔️ Free bonus features</li>
-          </ul>
-          <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-700 transition">Subscribe</button>
-      </div>
-  </div>
-  
 
+
+      <div class="plan-card  rounded-xl  p-6 w-80 text-center border border-gray-200">
+        <h3 class="text-3xl font-bold text-green-600 mb-4">Premium Plan</h3>
+        <p class="text-gray-200 text-xl mb-6">Best for advanced users and teams.</p>
+        <div class="price text-4xl font-bold text-gray-200 mb-4 ">&#8377;299<span
+            class="text-sm text-gray-300">/month</span></div>
+        <ul class="features text-gray-300 mb-6">
+          <li>✔️ Unlimited access</li>
+          <li>✔️ 24/7 priority support</li>
+          <li>✔️ Free bonus features</li>
+        </ul>
+        <button
+          class="bg-green-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-700 transition">Subscribe</button>
+      </div>
+    </div>
+    <footer class="bg-gradient-to-r from-zinc-900 to-zinc-black text-white py-8">
+      <div class="footer-con flex flex-wrap justify-between items-center px-10">
+        <!-- Podcast Info Section -->
+        <div class="my-podcast mb-6 md:mb-0">
+          <h2 class="text-4xl font-bold text-gray-200 mb-4">The Pod Journey</h2>
+          <p class="text-gray-400 text-lg">
+            "The Pod Journey" – Dive into captivating stories,<br> insightful conversations, and endless inspiration
+            with every episode.
+          </p>
+        </div>
+
+        <!-- Website Links Section -->
+        <div class="web-site-links flex flex-col gap-4">
+          <h3 class="text-xl font-semibold text-gray-200 mb-3">Quick Links</h3>
+          <a href="#" class="text-gray-400 hover:text-gray-200 transition-colors duration-300">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-gray-200 transition-colors duration-300">Terms & Conditions</a>
+          <a href="#" class="text-gray-400 hover:text-gray-200 transition-colors duration-300">Contact Us</a>
+          <a href="#" class="text-gray-400 hover:text-gray-200 transition-colors duration-300">FAQ</a>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="social-links flex flex-col items-start gap-2 text-white">
+          <h3 class="text-xl font-semibold mb-2">Follow Us</h3>
+          <div class="social-icons flex gap-6 text-3xl mt-2">
+            <a href="#" class="hover:text-blue-500 transition-colors duration-300">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a href="#" class="hover:text-pink-500 transition-colors duration-300">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="hover:text-green-500 transition-colors duration-300">
+              <i class="ri-spotify-line"></i>
+            </a>
+            <a href="#" class="hover:text-red-500 transition-colors duration-300">
+              <i class="ri-youtube-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
   </main>
